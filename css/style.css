@@ -2,6 +2,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 }
+/* Resets the floats */
 .reset{
 	clear: both;
 }
@@ -52,10 +53,10 @@ header .naviBar{
 	top:10px;
 }
 .containerForCode{
-	position: relative;
-height:100%;
-width:100%;
-float:left;
+	position: relative; /*Contains the html code for the container in that div*/
+	height:100%;
+	width:100%;
+	float:left;
 }
 .containerForCode textarea{
 	width:100%;
@@ -69,9 +70,13 @@ float:left;
 #CSSContainer, #JavaScriptContainer, #ResultContainer{
 	display: none;
 }
+/*Used for toggling */
 .selected{
 	background:grey;
 }
+/*Only one iframe used.
+  Dislays the result of the html, css, and jquery contents compiled.
+*/
 iframe{
 	height:100%;
 	width: 100%;
